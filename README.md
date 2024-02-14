@@ -126,4 +126,5 @@ Today I completed the following deliverables:
 **2/13**
 
 - For the CSS styling deliverable, I added features like an image, flexbox, responsiveness, and headers and footers to my web application 
+- I made all the pages have the same layout, used styling from bootstrap as well as features such as a collapsable menu and accordian boxes 
 
