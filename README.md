@@ -109,3 +109,21 @@ For this deliverable, I used webSocket to update the projects in real-time
 - **Bundled and transpiled** 
 - **Components** - Login, project list, upload are all components.
 - **Router** - Routing between login and upload components.
+- 
+
+
+### Updates and commits 
+
+**2/5**
+
+Today I completed the following deliverables:
+
+- I created an HTML page for each page of my application including some CSS styling, and a custom logo. I also learned small details such as how to center an image
+- I created the placeholders for the Database which will collect usernames and passwords. I am still unsure how to fully link the database to my website
+- I created the placeholder for the websocket. In my home page, I envision the WebSocket allowing messaging within the application of user comments and I added
+  the initial framework of the communication. I am still unsure of how to complete it.
+
+**2/13**
+
+- For the CSS styling deliverable, I added features like an image, flexbox, responsiveness, and headers and footers to my web application 
+
