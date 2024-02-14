@@ -17,3 +17,14 @@
     height: 200px;
     background: gray;
   }
+
+  .center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .input{
+    border-radius: 0.4rem;
+  }
