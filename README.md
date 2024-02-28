@@ -120,11 +120,18 @@ Today I completed the following deliverables:
 
 - I created an HTML page for each page of my application including some CSS styling, and a custom logo. I also learned small details such as how to center an image
 - I created the placeholders for the Database which will collect usernames and passwords. I am still unsure how to fully link the database to my website
-- I created the placeholder for the websocket. In my home page, I envision the WebSocket allowing messaging within the application of user comments and I added
+- I created the placeholder for the WebSocket. In my home page, I envision the WebSocket allowing messaging within the application of user comments and I added
   the initial framework of the communication. I am still unsure of how to complete it.
 
 **2/13**
 
 - For the CSS styling deliverable, I added features like an image, flexbox, responsiveness, and headers and footers to my web application 
-- I made all the pages have the same layout, used styling from bootstrap as well as features such as a collapsable menu and accordian boxes 
+- I made all the pages have the same layout, used styling from bootstrap as well as features such as a collapsable menu and accordion boxes
+- Startup CSS Deliverables: 
+- Properly styled CSS header, footer, and main content body (shown in the dropdown menu across all pages)
+- Properly styled CSS navigation elements (Shown in the dropdown menu and header)
+- Responsive to window resizing (Shown using bootstrap and flexbox applications)
+- Properly styled CSS application elements (Consistent fonts, colors, backgrounds, and layouts)
+- Properly styled CSS application text content (Consistent fonts and colors)
+- Properly styled CSS application images (Shown displaying "logo" in the header)
 
