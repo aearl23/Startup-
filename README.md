@@ -135,3 +135,9 @@ Today I completed the following deliverables:
 - Properly styled CSS application text content (Consistent fonts and colors)
 - Properly styled CSS application images (Shown displaying "logo" in the header)
 
+**2/28**
+
+- JS for future login:  Added login.js to take users to home page 
+- JS for database data:  
+- JS for future websocket: 
+- JS for interaction logic: 
