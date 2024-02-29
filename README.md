@@ -138,6 +138,6 @@ Today I completed the following deliverables:
 **2/28**
 
 - JS for future login:  Added login.js to take users to home page 
-- JS for database data:  
-- JS for future websocket: 
-- JS for interaction logic: 
+- JS for database data: table on the home page displays data of votes ranked by technology name and vote count 
+- JS for future websocket: shown in the project interactions file. JS application will allow for comments and messages to be displayed via websocket 
+- JS for interaction logic: Shown in the voting.js file, users can vote on projects to interact with the page. Votes will be logged and updated in real time 

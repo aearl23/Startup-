@@ -52,6 +52,22 @@
         </ul>
       </div>
 
+      <div class="container mt-4">
+        <h2>Top Technologies</h2>
+        <table id="top-technologies" class="table table-striped">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Name</th>
+              <th>Votes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Table rows will be dynamically populated by JavaScript -->
+          </tbody>
+        </table>
+      </div>
+
       <div id="accordion" class="accordion demo-box">
         <h2>Technologies</h2>
 
@@ -60,6 +76,11 @@
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#section1Collapse" aria-expanded="true" aria-controls="section1Collapse">
               Technology 1
             </button>
+            <!--Vote button-->
+            <button class="btn btn-primary vote-button" data-project="1">Vote</button>
+            <!-- Vote count -->
+            <span class="vote-count">0</span>
+
           </h3>
           <div id="section1Collapse" class="accordion-collapse collapse show" aria-labelledby="section1Heading" data-bs-parent="#accordion">
             <div class="accordion-body">
@@ -75,6 +96,11 @@
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#section2Collapse" aria-expanded="false" aria-controls="section2Collapse">
               Technology 2
             </button>
+
+            <button class="btn btn-primary vote-button" data-project="1">Vote</button>
+            <!-- Vote count -->
+            <span class="vote-count">0</span>
+
           </h3>
           <div id="section2Collapse" class="accordion-collapse collapse show" aria-labelledby="section2Heading" data-bs-parent="#accordion">
             <div class="accordion-body">
