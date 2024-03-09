@@ -11,6 +11,7 @@
           tech.votes++;
         }
       });
+      updateTable();
     }
   
     var voteButtons = document.querySelectorAll('.vote-button');
@@ -19,7 +20,6 @@
       button.addEventListener('click', function() {
         var techName = this.getAttribute('data-tech');
         updateVoteCount(techName);
-        updateTable();
       });
     });
   
