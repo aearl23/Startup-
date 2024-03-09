@@ -140,4 +140,17 @@ Today I completed the following deliverables:
 - JS for future login:  Added login.js to take users to home page 
 - JS for database data: table on the home page displays data of votes ranked by technology name and vote count 
 - JS for future websocket: shown in the project interactions file. JS application will allow for comments and messages to be displayed via websocket 
-- JS for interaction logic: Shown in the voting.js file, users can vote on projects to interact with the page. Votes will be logged and updated in real time 
+- JS for interaction logic: Shown in the voting.js file, users can vote on projects to interact with the page. Votes will be logged and updated in real time
+
+  **3/9**
+  - Convert your startup application into a web service using Node.js and Express: completed following the npm install instructions, runs on port 4000
+  - Serve up your frontend code using the Express static middleware: all files set to a public directory and middleware was used
+  - Provide endpoints for your service:
+  - Call your endpoints from your frontend code: 
+  - Call third-party endpoints from your frontend code: About page used an api call to display a random quote 
+  - Debug your application using VS Code's Node debugger and the browser's dev tools, in your development environment, to verify it is working correctly.
+  - Periodically commit and push your code to GitHub: 
+  - Periodically update your startup repository's notes.md file to reflect what you have learned and want to remember: Done
+  - Push your final version of your project to GitHub: Done
+  - Deploy your startup application to your production environment (your server): Done
+ 
