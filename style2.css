@@ -28,3 +28,13 @@
   .input{
     border-radius: 0.4rem;
   }
+
+  .comment {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .timestamp {
+    font-size: 0.8em;
+    color: #888;
+  }
