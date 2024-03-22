@@ -1,9 +1,15 @@
 const express = require('express');
 const cookieParser = require('cookie-parser');
 const app = express();
+const DB = require('./database.js');
+const bcrypt = require('bcrypt');
+
+const authCookieName = 'token';
+
 
 // Third party middleware - Cookies
 app.use(cookieParser());
+app.use(express.json())
 
 // Router for service endpoints
 var apiRouter = express.Router();
@@ -101,3 +107,13 @@ const port = 4000;
 app.listen(port, function () {
   console.log(`Listening on port ${port}`);
 });
+
+
+// setAuthCookie in the HTTP response
+function setAuthCookie(res, authToken) {
+  res.cookie(authCookieName, authToken, {
+    secure: true,
+    httpOnly: true,
+    sameSite: 'strict',
+  });
+}
