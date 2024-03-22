@@ -153,4 +153,23 @@ Today I completed the following deliverables:
   - Periodically update your startup repository's notes.md file to reflect what you have learned and want to remember: Done
   - Push your final version of your project to GitHub: Done
   - Deploy your startup application to your production environment (your server): Done
- 
+
+
+ **3/22**
+  - Review and deploy Simon Login : DONE
+  - Clone the Simon Login repository to your development environment : DONE
+  - Run npm install in root of the project : DONE
+  - Open the project in VS Code and examine the application's use of JavaScript to support database storage and user authentication : DONE
+  - Create and configure the dbConfig.json file with your MongoDB credentials : DONE
+  - Execute in your development environment by debugging the application using VS Code's Node.js debugger (press F5 while viewing index.js). Set breakpoints in VS 
+  - Code and step through the backend JavaScript related to login interactions  :  DONE
+  - Open your browser to https://localhost:3000 and use the browser's dev tools to step through the frontend JavaScript using the Source tab  : DONE
+  - Deploy to your production environment using the deployment script so that it is available with your domain's simon subdomain  : DONE
+  - Add code for connecting to the database : SEE DATABASE.JS
+  - Provide endpoints for adding, updating, and deleting your application data in the database : SEE INDEX.JS
+  - Persist data in MongoDB  : ADDED MULTIPLE USERS WHILE DEBUGGING 
+  - Display the user data in the frontend by manipulating the DOM : 
+  - Allow new users to create accounts by providing credentials : CREATE USER FUNCTIONALITY WORKING AND POPULATING DATA IN MONGODB
+  - Store encrypted credentials in your database : PASSWORDS ARE ENCRYPTED IN MongoDB
+  - Allow existing users to provide credentials : LOGIN FUNCTIONAL
+  - Authenticate users by comparing provided credentials against those stored in the database : SEE INDEX.JS, USED AUTH FUNCTIONS
