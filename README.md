@@ -145,11 +145,11 @@ Today I completed the following deliverables:
   **3/9**
   - Convert your startup application into a web service using Node.js and Express: completed following the npm install instructions, runs on port 4000
   - Serve up your frontend code using the Express static middleware: all files set to a public directory and middleware was used
-  - Provide endpoints for your service:
-  - Call your endpoints from your frontend code: 
+  - Provide endpoints for your service: set using node.js
+  - Call your endpoints from your frontend code: set using node.js
   - Call third-party endpoints from your frontend code: About page used an api call to display a random quote 
-  - Debug your application using VS Code's Node debugger and the browser's dev tools, in your development environment, to verify it is working correctly.
-  - Periodically commit and push your code to GitHub: 
+  - Debug your application using VS Code's Node debugger and the browser's dev tools, in your development environment: Debugging api call 
+  - Periodically commit and push your code to GitHub: 42 commits and going 
   - Periodically update your startup repository's notes.md file to reflect what you have learned and want to remember: Done
   - Push your final version of your project to GitHub: Done
   - Deploy your startup application to your production environment (your server): Done
