@@ -105,6 +105,6 @@ JavaScript enables the application to work for a single user.
 ## React deliverable
 
 - **Bundled and transpiled** 
-- **Components** - Login, project list, upload are all components.
-- **Router** - Routing between login and upload components.
+- **Components** 
+- **Router**
   
