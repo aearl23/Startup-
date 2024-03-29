@@ -63,11 +63,11 @@ apiRouter.get('/user/:email', async (req, res) => {
 });
 
 // secureApiRouter verifies credentials for endpoints
-var secureApiRouter = express.Router();
+const secureApiRouter = express.Router();
 apiRouter.use(secureApiRouter);
 
 secureApiRouter.use(async (req, res, next) => {
-  authToken = req.cookies[authCookieName];
+  const authToken = req.cookies[authCookieName];
   const user = await DB.getUserByToken(authToken);
   if (user) {
     next();
@@ -124,3 +124,6 @@ const httpService = app.listen(port, () => {
 });
 
 peerProxy(httpService);
+
+
+//error caused by respeating listen on port.. x2 

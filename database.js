@@ -7,6 +7,7 @@ const url = `mongodb+srv://${config.userName}:${config.password}@${config.hostna
 const client = new MongoClient(url);
 const db = client.db('CS260');
 const userCollection = db.collection('user');
+const voteCollection = db.collection('vote');
 
 // This will asynchronously test the connection and exit the process if it fails
 (async function testConnection() {
@@ -38,6 +39,7 @@ async function createUser(email, password) {
 
   return user;
 }
+
 
 module.exports = {getUser,getUserByToken,createUser}
 
