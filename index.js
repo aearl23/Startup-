@@ -7,6 +7,8 @@ const { peerProxy } = require('./peerProxy.js');
 
 const authCookieName = 'token';
 
+//service port 
+const port = process.argv.length > 2 ? process.argv[2] : 4000;
 
 // Third party middleware - Cookies
 app.use(cookieParser());
@@ -102,13 +104,6 @@ app.get('/error', (req, res, next) => {
 app.use(function (err, req, res, next) {
   res.status(500).send({type: err.name, message: err.message});
 });
-
-// Listening to a network port
-const port = 4000;
-app.listen(port, function () {
-  console.log(`Listening on port ${port}`);
-});
-
 
 // setAuthCookie in the HTTP response
 function setAuthCookie(res, authToken) {
