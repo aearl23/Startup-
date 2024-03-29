@@ -54,122 +54,57 @@ I am going to use the required technologies in the following ways.
 
 For this deliverable I built out the structure of my application using HTML.
 
-- **HTML pages** - Two HTML page that represent the ability to login
+- **HTML pages** - Four HTML pages that represent the ability to login, view the home page, view the product page, and about page 
 - **Links** - The login page automatically links to the main page. The main page contains links for every project.
 - **Text** - Each of the projects is represented by a textual description.
-- **DB/Login** - Input box and submit button for login. 
+- **DB/Login** - Input box and submit button for login.
+
 
 ## CSS deliverable
 
 For this deliverable, I will style the application into its final appearance.
 
-- **Header, footer, and main content body**
-- **Navigation elements** 
-- **Responsive to window resizing** - Mobile and Desktop
-- **Application elements** - Used good contrast and whitespace
-- **Application text content** - fonts
-
+- **Header, footer, and main content body** - Used flexbox and bootstrap to add page layout features 
+- **Navigation elements** - Properly styled CSS header, footer, and main content body (shown in the dropdown menu across all pages)
+- **Responsive to window resizing** - Mobile and Desktop Responsive to window resizing (Shown using bootstrap and flexbox applications)
+- **Application elements** - Properly styled CSS application text content (Consistent fonts and colors)
+- **Application text content** - Properly styled CSS application images (Shown displaying "logo" in the header)
 
 ## JavaScript deliverable
 
 JavaScript enables the application to work for a single user.
 
-- **login** - login button it takes you to the main page.
-- **database** - Displayed the listed projects 
-- **application logic** - The highlight and ranking projects based on frequency of views
-
+- **login** - JS for future login:  Added login.js to take users to home page 
+- **database** - JS for database data: table on the home page displays data of votes ranked by technology name and vote count 
+- **application logic** - JS for interaction logic: Shown in the voting.js file, users can vote on projects to interact with the page. Votes will be logged and updated in real time
   
 ## Service deliverable
 
-- **Node.js/Express HTTP service** 
-- **Static middleware for frontend** 
-- **Backend service endpoints** 
-- **Frontend calls service endpoints** 
+- **Node.js/Express HTTP service** -  completed following the npm install instructions, runs on port 4000
+- **Static middleware for frontend** - all files set to a public directory and middleware was used
+- **Backend service endpoints** - endpoints for login, getuser, vote, etc. all in index.js 
+- **Frontend calls service endpoints** - vote.js calls endpoints 
+
 
 ## DB/Login deliverable
 
-- **MongoDB Atlas database created**
-- **Stores data in MongoDB** 
-- **User registration** - Creates a new account in the database.
+- **MongoDB Atlas database created** - DONE
+- **Stores data in MongoDB** - Username and password Data is stored in MongoDB
+- **User registration** - Creates a new account in the database, stores in mongo, authenticates users 
 - **existing user** - Stores the projects under the same user if the user already exists.
-- **Use MongoDB to store credentials** - Stores both user and their work
+- **Use MongoDB to store credentials** - Stores both user and their data
 - **Restricts functionality** - You cannot vote until you have logged in
 
 ## WebSocket deliverable
 
-For this deliverable, I used webSocket to update the projects in real-time
-
-- **Backend listens for WebSocket connection**
-- **Frontend makes WebSocket connection** 
-- **Data sent over WebSocket connection** 
-- **WebSocket data displayed** - All user listings display in realtime
+- **Backend listens for WebSocket connection** - peerProxy.js file listens for websocket on backend 
+- **Frontend makes WebSocket connection** - home_functions.js file uses websocket to make connection 
+- **Data sent over WebSocket connection** - Comment data sent over websocket 
+- **WebSocket data displayed** - All user comments displayed in real time
 
 ## React deliverable
 
 - **Bundled and transpiled** 
-- **Components** - Login, project list, upload are all components.
-- **Router** - Routing between login and upload components.
-- 
-
-
-### Updates and commits 
-
-**2/5**
-
-Today I completed the following deliverables:
-
-- I created an HTML page for each page of my application including some CSS styling, and a custom logo. I also learned small details such as how to center an image
-- I created the placeholders for the Database which will collect usernames and passwords. I am still unsure how to fully link the database to my website
-- I created the placeholder for the WebSocket. In my home page, I envision the WebSocket allowing messaging within the application of user comments and I added
-  the initial framework of the communication. I am still unsure of how to complete it.
-
-**2/13**
-
-- For the CSS styling deliverable, I added features like an image, flexbox, responsiveness, and headers and footers to my web application 
-- I made all the pages have the same layout, used styling from bootstrap as well as features such as a collapsable menu and accordion boxes
-- Startup CSS Deliverables: 
-- Properly styled CSS header, footer, and main content body (shown in the dropdown menu across all pages)
-- Properly styled CSS navigation elements (Shown in the dropdown menu and header)
-- Responsive to window resizing (Shown using bootstrap and flexbox applications)
-- Properly styled CSS application elements (Consistent fonts, colors, backgrounds, and layouts)
-- Properly styled CSS application text content (Consistent fonts and colors)
-- Properly styled CSS application images (Shown displaying "logo" in the header)
-
-**2/28**
-
-- JS for future login:  Added login.js to take users to home page 
-- JS for database data: table on the home page displays data of votes ranked by technology name and vote count 
-- JS for future websocket: shown in the project interactions file. JS application will allow for comments and messages to be displayed via websocket 
-- JS for interaction logic: Shown in the voting.js file, users can vote on projects to interact with the page. Votes will be logged and updated in real time
-
-  **3/9**
-  - Convert your startup application into a web service using Node.js and Express: completed following the npm install instructions, runs on port 4000
-  - Serve up your frontend code using the Express static middleware: all files set to a public directory and middleware was used
-  - Provide endpoints for your service: set using node.js
-  - Call your endpoints from your frontend code: set using node.js
-  - Call third-party endpoints from your frontend code: About page used an api call to display a random quote 
-  - Debug your application using VS Code's Node debugger and the browser's dev tools, in your development environment: Debugging api call 
-  - Periodically commit and push your code to GitHub: 42 commits and going 
-  - Periodically update your startup repository's notes.md file to reflect what you have learned and want to remember: Done
-  - Push your final version of your project to GitHub: Done
-  - Deploy your startup application to your production environment (your server): Done
-
-
- **3/22**
-  - Review and deploy Simon Login : DONE
-  - Clone the Simon Login repository to your development environment : DONE
-  - Run npm install in root of the project : DONE
-  - Open the project in VS Code and examine the application's use of JavaScript to support database storage and user authentication : DONE
-  - Create and configure the dbConfig.json file with your MongoDB credentials : DONE
-  - Execute in your development environment by debugging the application using VS Code's Node.js debugger (press F5 while viewing index.js). Set breakpoints in VS 
-  - Code and step through the backend JavaScript related to login interactions  :  DONE
-  - Open your browser to https://localhost:3000 and use the browser's dev tools to step through the frontend JavaScript using the Source tab  : DONE
-  - Deploy to your production environment using the deployment script so that it is available with your domain's simon subdomain  : DONE
-  - Add code for connecting to the database : SEE DATABASE.JS
-  - Provide endpoints for adding, updating, and deleting your application data in the database : SEE INDEX.JS
-  - Persist data in MongoDB  : ADDED MULTIPLE USERS WHILE DEBUGGING 
-  - Display the user data in the frontend by manipulating the DOM : 
-  - Allow new users to create accounts by providing credentials : CREATE USER FUNCTIONALITY WORKING AND POPULATING DATA IN MONGODB
-  - Store encrypted credentials in your database : PASSWORDS ARE ENCRYPTED IN MongoDB
-  - Allow existing users to provide credentials : LOGIN FUNCTIONAL
-  - Authenticate users by comparing provided credentials against those stored in the database : SEE INDEX.JS, USED AUTH FUNCTIONS
+- **Components** 
+- **Router**
+  
