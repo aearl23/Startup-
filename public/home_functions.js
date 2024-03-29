@@ -23,6 +23,9 @@ playerNameEl.textContent = this.getuserName();
 this.configurewebSocket();
 this.broadcastEvent(this.getuserName(), commentmade, {});
 
+getuserName() {
+  return localStorage.getItem('userName') ?? 'Mystery user';
+}
 
 get
   // Websocket for peer communication
@@ -38,10 +41,8 @@ get
     };
     this.socket.onmessage = async (event) => {
       const msg = JSON.parse(await event.data.text());
-      if (msg.type === GameEndEvent) {
-        this.displayMsg('player', msg.from, `scored ${msg.value.score}`);
-      } else if (msg.type === GameStartEvent) {
-        this.displayMsg('player', msg.from, `started a new game`);
+      if (msg.type === commentmade) {
+        this.displayMsg('user', msg.from, `commented ${msg.value.comment}`);
       }
     };
   }
@@ -60,4 +61,3 @@ get
     };
     this.socket.send(JSON.stringify(event));
   }
-
