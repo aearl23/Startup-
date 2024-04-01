@@ -13,14 +13,16 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('submitComment').addEventListener('click', function() {
     var commentInput = document.getElementById('commentInput').value;
     if (commentInput) {
-      var commentText = commentInput.value;}
+      console.log(commentInput)
+      console.log("comment received")
+      var commentText = commentInput;
       if (commentText !== '') {
 
         var comment = {
           text: commentText,
           timestamp: new Date().toISOString()
         };
-
+        console.log(comment)
         saveComment(comment);
         // Add the comment to the DOM
         addComment(comment);
@@ -30,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Clear the comment input field
         commentInput.value = '';
-    }
+    }}
   });
 
   // Function to display messages on the screen

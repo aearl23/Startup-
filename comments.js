@@ -1,6 +1,7 @@
 function addComment() {
     var commentInput = document.getElementById('commentInput');
     var commentText = commentInput.value.trim();
+    console.log(commentText)
   
     if (commentText !== '') {
       var comment = {
