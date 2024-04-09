@@ -36,4 +36,13 @@ To support the narrow screen (portrait mode), we include a media query that dete
 To handle making our header and footer disappear when the screen is to short to display them, we use a media query that triggers when our viewport height has a maximum value of 700 pixels. When that is true we change the display property for both the header and the footer to none so that they will be hidden. When that happens the main element becomes the only child and since it has a flex value of 1, it takes over everything.
 
 
+4/5 React Deliverable
+
+- Move backend code to a separate service directory with the public frontend code. 
+- create vite service to bundle code, like live server
+- make router and bring in main html
+- replace anchor tags and other parts to navlinks / jsx components
+- copy and pasting js and html files to jsx, porting all code to jsx for react and vite
+- change functions to export components
+- browser router controls everthing displayed on single page app
 
