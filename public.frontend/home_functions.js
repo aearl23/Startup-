@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
     displayMsg('System', 'WebSocket connection closed');
   };
   socket.onmessage = async (event) => {
-    const msg = JSON.parse(event.data);
+    const msg = JSON.parse(await event.data.text());
     if (msg.type === commentmade) {
       // Display comments received over WebSocket
       displayMsg(msg.from, `commented: ${msg.value.comment}`);
