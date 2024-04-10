@@ -8,19 +8,6 @@ export function About(props) {
 
   // We only want this to render the first time the component is created and so we provide an empty dependency list.
   React.useEffect(() => {
-    const random = Math.floor(Math.random() * 1000);
-    fetch(`https://picsum.photos/v2/list?page=${random}&limit=1`)
-      .then((response) => response.json())
-      .then((data) => {
-        const containerEl = document.querySelector('#picture');
-
-        const width = containerEl.offsetWidth;
-        const height = containerEl.offsetHeight;
-        const apiUrl = `https://picsum.photos/id/${data[0].id}/${width}/${height}?grayscale`;
-        setImageUrl(apiUrl);
-      })
-      .catch();
-
     fetch('https://api.quotable.io/random')
       .then((response) => response.json())
       .then((data) => {
@@ -28,19 +15,15 @@ export function About(props) {
         setQuoteAuthor(data.author);
       })
       .catch();
+
+    const imageUrl = 'C:\Users\aaron\OneDrive\Desktop\CS260\Startup-\react src\about\Screenshot 2024-02-05 172230.png';
+    setImageUrl(imageUrl);
   }, []);
 
-  let imgEl = '';
-
-  if (imageUrl) {
-    imgEl = <img src={image} alt='stock background' />;
-  }
-
   return (
-    <main className='container-fluid bg-secondary text-center'>
       <div>
         <div id='picture' className='picture-box'>
-          {imgEl}
+            <img src={imageUrl} alt="Random Image" />
         </div>
 
         <p>
@@ -63,8 +46,7 @@ export function About(props) {
           <p className='quote'>{quote}</p>
           <p className='author'>{quoteAuthor}</p>
         </div>
-      </div>
-    </main>
+    </div>
   );
 }
 
