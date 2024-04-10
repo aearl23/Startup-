@@ -71,16 +71,13 @@ function App() {
           <Route path='*' element={<NotFound />} />
         </Routes>
 
-    <footer>
-      <footer class="sticky-bottom">
-        <nav class="navbar bg-light">
+    
+        <footer class="sticky-bottom">
           <div class="container-fluid ">
             <p class="text-muted">&copy; Aaron Earl - Web Programming 260</p>
             <a href="https://github.com/aearl23/Startup-">GitHub</a>
           </div>
-      </footer>
-
-    </footer>  
+        </footer>   
       </div>
     </BrowserRouter>
   );
@@ -91,52 +88,3 @@ function NotFound() {
 }
 
 export default App;
-
-
-
-
-
-<div className='app'>
-    <!--Toggle menu bar with all pages-->
-    <header class="sticky-top">
-      <nav class="navbar navbar-expand-lg bg-light">
-         <div class="container-fluid">
-           <div class="center-image">  
-             <img src="Screenshot 2024-02-05 172230.png" alt='logo' style="width:144px; height:46px;">
-           </div>
-           <a class="navbar-brand" href="https://getbootstrap.com/">
-             <h1>TechConnect</h1>
-           </a>
-           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-             <span class="navbar-toggler-icon"></span>
-           </button>
-           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-               <li class="nav-item">
-                 <a class="nav-link" href="Home.html">Home</a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link" href="Proj_Page.html">Project Page</a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link" href="About.html">About</a>
-               </li>
-             </ul>
-           </div>
-         </div>
-       </nav>
-    </header>
-
-
-   
-    <footer>
-      <footer class="sticky-bottom">
-        <nav class="navbar bg-light">
-          <div class="container-fluid ">
-            <p class="text-muted">&copy; Aaron Earl - Web Programming 260</p>
-            <a href="https://github.com/aearl23/Startup-">GitHub</a>
-          </div>
-      </footer>
-
-    </footer>  
-  </div>

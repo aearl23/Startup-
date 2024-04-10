@@ -1,63 +1,80 @@
 import React from 'react';
-import './proj_page.css';
 
-export function About(props) {
-  const [imageUrl, setImageUrl] = React.useState('');
-  const [quote, setQuote] = React.useState('Loading...');
-  const [quoteAuthor, setQuoteAuthor] = React.useState('unknown');
-
-  // We only want this to render the first time the component is created and so we provide an empty dependency list.
-  React.useEffect(() => {
-    const random = Math.floor(Math.random() * 1000);
-    fetch(`https://picsum.photos/v2/list?page=${random}&limit=1`)
-      .then((response) => response.json())
-      .then((data) => {
-        const containerEl = document.querySelector('#picture');
-
-        const width = containerEl.offsetWidth;
-        const height = containerEl.offsetHeight;
-        const apiUrl = `https://picsum.photos/id/${data[0].id}/${width}/${height}?grayscale`;
-        setImageUrl(apiUrl);
-      })
-      .catch();
-
-    fetch('https://api.quotable.io/random')
-      .then((response) => response.json())
-      .then((data) => {
-        setQuote(data.content);
-        setQuoteAuthor(data.author);
-      })
-      .catch();
-  }, []);
-
-  let imgEl = '';
-
-  if (imageUrl) {
-    imgEl = <img src={imageUrl} alt='stock background' />;
-  }
-
+function ProjectPage() {
   return (
-    <main className='container-fluid bg-secondary text-center'>
-      <div>
-        <div id='picture' className='picture-box'>
-          {imgEl}
+    <>
+      <header className="sticky-top">
+        <nav className="navbar navbar-expand-lg bg-light">
+          <div className="container-fluid">
+            <div className="center-image">
+              <img src="Screenshot 2024-02-05 172230.png" alt='logo' style={{ width: "144px", height: "46px" }} />
+            </div>
+            <a className="navbar-brand" href="https://getbootstrap.com/">
+              <h1>TechConnect</h1>
+            </a>
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+              <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                <li className="nav-item">
+                  <a className="nav-link" href="Home.html">Home</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="Proj_Page.html">Project Page</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="About.html">About</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#accordionTypography" data-bs-toggle="collapse"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+
+        <div id="card" className="demo-box">
+          <h2>LET Joint</h2>
+          <div className="card" style={{ width: "fill" }}>
+            <div className="center-image">
+              <img src="dsc09822.jpg" style={{ width: "280px", height: "200px" }} />
+            </div>
+
+            <p>
+              Summary:
+              The Lamina Emergent Torsional (LET) joint is a sophisticated yet versatile technology
+              developed by BYU researchers. It involves a flat sheet of material with specialized segments.
+              These segments serve as hinges, enabling controlled twisting movements, and they are interconnected
+              by a component that maintains their alignment.
+            </p>
+
+            <p>
+              View available patents here:
+              <a href="https://patents.google.com/patent/US9157497B1">US Patent US9157497B1</a>
+              <a href="https://patents.google.com/patent/US11224124B2">US Patent US11224124B2</a>
+              <a href="https://patents.google.com/patent/US10506708B2">US Patent US10506708B2</a>
+              <a href="https://patents.google.com/patent/US11549563B2">US Patent US11549563B2</a>
+            </p>
+          </div>
         </div>
 
-        <p>
-          Simon is a repetitive memory game where you follow the demonstrated color sequence until you make a mistake.
-          The longer the sequence you repeat, the greater your score.
-        </p>
+      </main>
 
-        <p>
-          The name Simon is a registered trademark of Milton-Bradley. Our use of the name and the game is for non-profit
-          educational use only. No part of this code or application may be used outside of that definition.
-        </p>
-
-        <div className='quote-box bg-light text-dark'>
-          <p className='quote'>{quote}</p>
-          <p className='author'>{quoteAuthor}</p>
-        </div>
-      </div>
-    </main>
+      <footer className="sticky-bottom">
+        <nav className="navbar bg-light">
+          <div className="container-fluid">
+            <p className="text-muted">&copy; Aaron Earl - Web Programming 260</p>
+            <a href="https://github.com/aearl23/Startup-">GitHub</a>
+          </div>
+        </nav>
+      </footer>
+      <script src="proj_interaction.js"></script>
+    </>
   );
 }
+
+export default ProjectPage;
