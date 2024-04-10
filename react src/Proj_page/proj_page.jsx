@@ -1,4 +1,5 @@
 import React from 'react';
+import './proj_page.css'
 
 function ProjectPage() {
   return (
