@@ -1,40 +1,52 @@
-* {
-    box-sizing: border-box;
-  }
-  
-  html {
-    margin: 2rem;
-  }
-  
-  .demo-box {
-    margin: 1rem 0;
-    border: thin solid #dee2e6;
-    border-radius: 0.25rem;
-    padding: 1rem;
-  }
-  
-  .card > img {
-    height: 200px;
-    background: gray;
-  }
+.body {
+  display: flex;
+  flex-direction: column;
+  min-width: 375px;
+  height: 100vh;
+}
 
-  .center{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
+header {
+  flex: 0 80px;
+}
 
-  .input{
-    border-radius: 0.4rem;
-  }
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
 
-  .comment {
-    border-bottom: 1px solid #ccc;
-    padding: 10px;
+footer {
+  flex: 0 30px;
+}
+
+menu {
+  flex: 1;
+  display: flex;
+  /*  overwrite Bootstrap so the menu does not wrap */
+  flex-direction: row !important;
+  list-style: none;
+}
+
+.navbar-brand {
+  padding-left: 0.3em;
+  border-bottom: solid rgb(182, 182, 182) thin;
+}
+
+menu .nav-item {
+  padding: 0 0.3em;
+}
+
+footer a {
+  float: right;
+}
+
+@media (max-height: 600px) {
+  header {
+    display: none;
   }
-  
-  .timestamp {
-    font-size: 0.8em;
-    color: #888;
+  footer {
+    display: none;
   }
+}
