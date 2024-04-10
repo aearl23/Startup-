@@ -1,8 +1,8 @@
 // vote tracker for top technologies 
   document.addEventListener('DOMContentLoaded', function() {
     var technologies = [
-      { name: 'Technology 1', votes: 0 },
-      { name: 'Technology 2', votes: 0 },
+      { name: 'LET Joint', votes: 0 },
+      { name: 'Corn Stalk Integration Device', votes: 0 },
     ];
   
     function updateVoteCount(techName) {

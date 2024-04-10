@@ -43,15 +43,6 @@
       </header>
 
     <main>
-      <div id="card" class="demo-box">
-        <h2>Recent Activity:</h2>
-        <ul class="notification">
-          <li class="user-name">Tim added a comment</li>
-          <li class="user-name">Ada added a comment</li>
-          <li class="user-name">Sam viewed __technology__</li>
-        </ul>
-      </div>
-
       <div class="container mt-4">
         <h2>Top Technologies</h2>
         <table id="top-technologies" class="table table-striped">
@@ -78,7 +69,7 @@
             </button>
             <!--Vote button-->
             <button class="btn btn-primary vote-button" data-tech="LET Joint">Vote</button>
-
+          
           </h3>
           <div id="section1Collapse" class="accordion-collapse collapse show" aria-labelledby="section1Heading" data-bs-parent="#accordion">
             <div class="accordion-body">
@@ -89,7 +80,9 @@
               <p>The Lamina Emergent Torsional (LET) joint is a sophisticated yet versatile technology 
                 developed by BYU researchers. It involves a flat sheet of material with specialized segments. 
                 These segments serve as hinges, enabling controlled twisting movements, and they are interconnected
-                 by a component that maintains their alignment.</p>
+                 by a component that maintains their alignment. 
+                <a href="Proj_Page.html" >View Technology page</a>
+                </p>
             </div>
           </div>
         </div>
@@ -123,7 +116,7 @@
         <div id="commentsSection">
           <h2>Comments Section:</h2>
           <input type="text" id="commentInput" placeholder="Add your comment...">
-          <button onclick="addComment()">Submit</button>
+          <button id="submitComment">Submit</button>
           <div id="comments"></div>
         </div>
 
@@ -144,5 +137,7 @@
       <script src="https://cdn.jsdeliver.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YAx0xksA7Y+Bs7E40v1v6sEGJ5gB/vb0q5/k0cp3lnMAelS+V0HbYu/gfAyoZW2D" crossorigin="anonymous"></script>"
       <script src="script.js"></script>
       <script src="vote.js"></script>
+      <script src="home_functions.js"></script>
+      </footer>
   </body>
 </html>
