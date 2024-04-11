@@ -1,7 +1,7 @@
 import React from 'react';
 import './proj_page.css'
 
-function ProjectPage() {
+export function ProjectPage() {
   return (
     <>
       <header className="sticky-top">
@@ -78,4 +78,3 @@ function ProjectPage() {
   );
 }
 
-export default ProjectPage;
