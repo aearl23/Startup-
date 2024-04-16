@@ -15,7 +15,7 @@
   
   .card > img {
     height: 200px;
-    background: gray;
+    background: rgb(255, 255, 255);
   }
 
   .center{
