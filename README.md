@@ -104,7 +104,8 @@ JavaScript enables the application to work for a single user.
 
 ## React deliverable
 
-- **Bundled and transpiled** 
-- **Components** 
-- **Router**
+- **Bundled and transpiled** - Bundled and built with vite 
+- **Components** - react components made for home, project page, about page 
+- **Router** - react-router loads pages into DOM
+- **Errors** - I had multiple errors with 502 errors for both my Simon and startup deployment. The code is complete and shows completion but the website still has a few bugs 
   
